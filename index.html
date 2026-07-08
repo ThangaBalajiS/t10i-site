@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T10i - Engineering for the fun of it</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDZKHKRG20"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-EDZKHKRG20');
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Patrick+Hand&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -35,9 +45,9 @@
                     <img src="images/logo.png" alt="T10i Character" class="main-logo">
                 </div>
                 <h1>Hi, I'm <span class="t-orange">T</span><span class="t-blue">1</span><span class="t-orange">0</span><span class="t-blue">i</span>!</h1>
-                <p class="tagline">Product Engineer & Builder</p>
-                <p class="sub-tagline">8+ years of shipping software and solving real-world problems.</p>
-                <a href="#projects" class="cta-button">See What I Build</a>
+                <p class="tagline">Engineer & Builder — I ship things people actually use.</p>
+                <p class="sub-tagline">8+ years shipping production software. But the stuff I'm proudest of? The tools I build for myself and put out into the world.</p>
+                <a href="#projects" class="cta-button">See What I've Built</a>
             </div>
         </section>
 
@@ -45,51 +55,99 @@
             <h2>Who am I?</h2>
             <div class="card about-card">
                 <p>
-                    I'm a <strong>Product Engineer</strong> with over 8 years of experience building software that scales. 
-                    I'm a proud <a href="https://en.wikipedia.org/wiki/PSG_College_of_Technology" target="_blank" class="psg-link">PSG Tech Alumnus</a>, 
-                    specializing in the MERN stack and shipping products that people actually use.
+                    I'm a builder at heart and a full-stack engineer by trade. I've spent the last 8+ years
+                    shipping production software on the MERN stack, most recently as a lead engineer taking
+                    features from idea to production at scale.
                 </p>
                 <p>
-                    When I'm not architecting systems or squashing bugs, I'm usually hanging out with my son, <strong>Paari</strong>, 
-                    or exploring one of my many "side quests"—from stargazing to card throwing.
+                    These days a lot of that work involves <strong>AI</strong> — orchestrating LLMs into real products,
+                    building MCP servers, and wiring up agentic workflows. But my favorite kind of engineering is the kind
+                    nobody assigns me: the browser extension I built because my own tabs were a mess, the invoicing tool
+                    I made because I got tired of ugly PDFs.
+                </p>
+                <p>
+                    When I'm not building, I'm usually with my son <strong>Paari</strong>, or chasing one of my many
+                    <strong>Side Quests</strong> (scroll down — they get weird).
                 </p>
                 <div class="tech-stack">
                     <span class="tech-badge">MongoDB</span>
                     <span class="tech-badge">Express</span>
                     <span class="tech-badge">React</span>
                     <span class="tech-badge">Node.js</span>
-                    <span class="tech-badge">Git</span>
-                    <span class="tech-badge">AI Workflows</span>
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">AI Orchestration</span>
+                    <span class="tech-badge">LLMs / MCP</span>
+                    <span class="tech-badge">Chrome Extensions</span>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="content-section">
             <h2>Stuff I've Made</h2>
+            <p class="projects-intro">Real tools, shipped and maintained. Some have thousands of users; all of them started as "wouldn't it be nice if&hellip;"</p>
             <div class="projects-grid">
+                <article class="project-card flagship">
+                    <h3>Infinite Tabs Manager</h3>
+                    <p class="project-hook">A privacy-first browser extension that turns tab chaos into calm.</p>
+                    <p>Save, group, and restore your tabs from one minimal dashboard — and cut browser memory usage by up to <strong>96%</strong>. Smart grouping bundles tabs by site (or dumps them all in a click), and audible tabs are automatically skipped so your music never stops. Built for Chrome and Firefox, with zero data collection.</p>
+                    <div class="stat-badges">
+                        <span class="stat-badge"><strong>1,000+</strong> weekly active users</span>
+                        <span class="stat-badge">up to <strong>96%</strong> less memory</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Chrome Extension APIs</span>
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">Chrome + Firefox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThangaBalajiS/OrganizeTabs" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a href="https://thangabalajis.github.io/OrganizeTabs/" target="_blank" rel="noopener noreferrer">About</a>
+                        <a href="https://chromewebstore.google.com/detail/infinite-tabs-manager/hjpahkeoabpccidknfdepajnfjncjiep" target="_blank" rel="noopener noreferrer">Chrome Store</a>
+                    </div>
+                </article>
                 <article class="project-card">
                     <h3>T10i Quotes</h3>
-                    <p>Generate professional quotes and invoices effortlessly with instant PDF creation. Built for speed with Next.js 15 and Tailwind CSS.</p>
+                    <p class="project-hook">Professional quotes & invoices → instant PDF, zero friction.</p>
+                    <p>A fast, no-nonsense tool for generating clean quotes and invoices with instant PDF export. Built for speed with Next.js 15 and Tailwind CSS — the kind of utility I wanted to exist, so I made it.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Next.js 15</span>
+                        <span class="project-tag">Tailwind CSS</span>
+                        <span class="project-tag">PDF generation</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/ThangaBalajiS/quotation-maker/tree/release" target="_blank">Code</a>
-                        <a href="https://quotes.t10i.in" target="_blank">Live</a>
+                        <a href="https://github.com/ThangaBalajiS/quotation-maker/tree/release" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a href="https://quotes.t10i.in" target="_blank" rel="noopener noreferrer">Live</a>
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>Infinite Tabs Manager</h3>
-                    <p>A privacy-focused browser extension that declutters your workspace by organizing tabs into a minimalistic dashboard, helping you stay focused and productive.</p>
+                    <h3>WhatsApp Cloud Dashboard</h3>
+                    <p class="project-hook">Send & receive WhatsApp messages — no webhook server required.</p>
+                    <p>A free dashboard for WhatsApp Cloud API users to receive and send messages without standing up their own webhook infrastructure. The backend-heavy side project where I get to own the messaging plumbing end to end.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">TypeScript</span>
+                        <span class="project-tag">WhatsApp Cloud API</span>
+                        <span class="project-tag">Node.js</span>
+                    </div>
                     <div class="project-links">
-                        <a href="https://github.com/ThangaBalajiS/OrganizeTabs" target="_blank">Code</a>
-                        <a href="https://thangabalajis.github.io/OrganizeTabs/" target="_blank">About</a>
-                        <a href="https://chromewebstore.google.com/detail/infinite-tabs-manager/hjpahkeoabpccidknfdepajnfjncjiep" target="_blank">Store</a>
+                        <a href="https://github.com/ThangaBalajiS/whatsapp-cloud-app" target="_blank" rel="noopener noreferrer">Code</a>
                     </div>
                 </article>
-                <article class="project-card coming-soon">
-                    <div class="status-badge">Coming Soon</div>
+                <article class="project-card">
                     <h3>Highkey</h3>
-                    <p>A productivity-first Chrome extension for power users. Custom keyboard shortcuts to supercharge your daily workflow.</p>
+                    <p class="project-hook">Stop clicking. Start binding.</p>
+                    <p>A Chrome extension for people who'd rather not touch the mouse. Assign custom keyboard shortcuts to any element on a page through a visual picker — no CSS or code required.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Chrome Extension APIs</span>
+                        <span class="project-tag">TypeScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ThangaBalajiS/highkey" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a href="https://chromewebstore.google.com/detail/highkey-the-visual-binder/menkgmpdjcoogmhpfdodaiddbgjeepie" target="_blank" rel="noopener noreferrer">Chrome Store</a>
+                    </div>
                 </article>
             </div>
+            <p class="projects-footer">More experiments live on <a href="https://github.com/ThangaBalajiS" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
         </section>
 
         <section id="interests" class="content-section">
@@ -98,32 +156,27 @@
                 <div class="interest-card">
                     <span class="interest-icon">♟️</span>
                     <h3>Chess</h3>
-                    <p>Up for a game? Challenge me: <a href="https://www.chess.com/member/kaalisaga" target="_blank"><strong>kaalisaga</strong></a></p>
+                    <p>Up for a game? Challenge me: <a href="https://www.chess.com/member/kaalisaga" target="_blank" rel="noopener noreferrer"><strong>kaalisaga</strong></a></p>
                 </div>
                 <div class="interest-card">
                     <span class="interest-icon">🔭</span>
                     <h3>Astronomy</h3>
-                    <p>Observing Saturn's rings and Jupiter's moons through my telescope.</p>
+                    <p>Saturn's rings and Jupiter's moons through my telescope.</p>
                 </div>
                 <div class="interest-card">
                     <span class="interest-icon">🏃</span>
                     <h3>Half Marathon</h3>
-                    <p>Training to beat my previous timing — focused on endurance and speed consistency.</p>
-                </div>
-                <div class="interest-card">
-                    <span class="interest-icon">🏏</span>
-                    <h3>Cricket</h3>
-                    <p>Working on pace bowling and batting mechanics at the academy.</p>
+                    <p>Chasing a faster finish time.</p>
                 </div>
                 <div class="interest-card">
                     <span class="interest-icon">🃏</span>
-                    <h3>Skills</h3>
-                    <p>Mastering <strong>Card Throwing</strong> and keeping a <strong>680+ day streak</strong> on Duolingo learning Spanish, Math, and Chess.</p>
+                    <h3>Card Throwing</h3>
+                    <p>An oddly specific party trick I keep sharpening.</p>
                 </div>
                 <div class="interest-card">
                     <span class="interest-icon">🎸</span>
                     <h3>Music</h3>
-                    <p>Learning to play the <strong>Guitar</strong> and <strong>Piano</strong> while exploring musical theory.</p>
+                    <p>Learning <strong>guitar</strong> & <strong>piano</strong>.</p>
                 </div>
                 <div class="interest-card">
                     <span class="interest-icon">🍛</span>
@@ -138,10 +191,10 @@
             <div class="card contact-card">
                 <p>Got a project? A bug? A coffee recommendation? Reach out on social media!</p>
                 <div class="social-links">
-                    <a href="https://github.com/ThangaBalajiS" class="social-icon" target="_blank">GitHub</a>
-                    <a href="https://x.com/goldenbalaji" class="social-icon" target="_blank">X</a>
-                    <a href="https://www.linkedin.com/in/thangabalajis/" class="social-icon" target="_blank">LinkedIn</a>
-                    <a href="https://www.instagram.com/t10i.in" class="social-icon" target="_blank">Instagram</a>
+                    <a href="https://github.com/ThangaBalajiS" class="social-icon" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://x.com/goldenbalaji" class="social-icon" target="_blank" rel="noopener noreferrer">X</a>
+                    <a href="https://www.linkedin.com/in/thangabalajis/" class="social-icon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.instagram.com/t10i.in" class="social-icon" target="_blank" rel="noopener noreferrer">Instagram</a>
                 </div>
             </div>
         </section>
@@ -153,6 +206,68 @@
 
     <script>
         document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Analytics event tracking -->
+    <script>
+    (function () {
+        function track() {
+            return typeof gtag === 'function' ? gtag.apply(null, arguments) : null;
+        }
+
+        // Delegated click tracking for CTA, nav, project links, socials and outbound links
+        document.addEventListener('click', function (e) {
+            var link = e.target.closest('a');
+            if (!link) return;
+
+            var text = (link.textContent || '').trim();
+            var handled = false;
+
+            if (link.classList.contains('cta-button')) {
+                track('event', 'cta_click', { cta_text: text, section: 'hero' });
+                handled = true;
+            } else if (link.closest('.nav-links')) {
+                track('event', 'nav_click', { nav_target: link.getAttribute('href') });
+                handled = true;
+            } else if (link.closest('.project-links')) {
+                var card = link.closest('.project-card');
+                var title = card && card.querySelector('h3') ? card.querySelector('h3').textContent.trim() : 'Unknown';
+                track('event', 'project_link_click', {
+                    project_name: title,
+                    link_label: text,
+                    link_url: link.href
+                });
+                handled = true;
+            } else if (link.closest('.social-links')) {
+                track('event', 'social_click', { social_network: text, link_url: link.href });
+                handled = true;
+            }
+
+            // Any remaining external link (e.g. Side Quests, GitHub footer)
+            if (!handled && link.hostname && link.hostname !== location.hostname && /^https?:$/.test(link.protocol)) {
+                track('event', 'outbound_click', {
+                    link_domain: link.hostname,
+                    link_url: link.href,
+                    link_text: text
+                });
+            }
+        });
+
+        // Fire a section_view event the first time each section scrolls into view
+        if ('IntersectionObserver' in window) {
+            var seen = {};
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    var id = entry.target.id;
+                    if (entry.isIntersecting && !seen[id]) {
+                        seen[id] = true;
+                        track('event', 'section_view', { section_id: id });
+                    }
+                });
+            }, { threshold: 0.5 });
+            document.querySelectorAll('main section[id]').forEach(function (s) { observer.observe(s); });
+        }
+    })();
     </script>
 
 </body>
